@@ -1,6 +1,13 @@
 {
+  "name": "misinformation1.0",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start:bot": "node bot.js"
+  },
   "dependencies": {
     "dotenv": "^17.2.2",
-    "node-telegram-bot-api": "^0.66.0"
+    "node-telegram-bot-api": "^0.66.0",
+    "node-fetch": "^3.3.2"
   }
 }

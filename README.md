@@ -235,3 +235,51 @@ For issues and questions:
 ---
 
 **Made with ❤️ for safer, informed digital experiences**
+
+---
+
+## 🤖 Telegram Bot (Polling) Setup
+
+This repo now includes a Telegram polling bot that can verify text and images via your existing analysis/OCR pipeline.
+
+### Files
+- `bot.js` — Telegram bot entry (CommonJS)
+- `bot-adapter.js` — Adapts existing services into a normalized API for the bot
+- `lib/download.js` — Downloads Telegram files as Buffer/temp file
+- `.env.example` — Environment variables template (do not commit `.env`)
+
+### Prerequisites
+- Node.js 18+ (for global `fetch`, `Blob` and FormData support)
+- A Telegram Bot Token from [@BotFather](https://t.me/BotFather)
+
+### Configure
+1. Copy `.env.example` to `.env` and set:
+```
+TELEGRAM_BOT_TOKEN=YOUR_BOT_TOKEN
+# Optional timeout override
+BOT_OPERATION_TIMEOUT_MS=120000
+
+# Backend keys if needed by your services
+GEMINI_API_KEY=
+OCR_SPACE_API_KEY=
+SIGHTENGINE_API_USER=
+SIGHTENGINE_API_SECRET=
+HUGGING_FACE_API_KEY=
+```
+2. Install dependencies:
+```
+npm install
+```
+
+### Run
+```
+npm run start:bot
+```
+Send `/start` to your bot and use the buttons:
+- Verify text → send text, bot returns analysis.
+- Verify image → send image/photo, bot runs OCR then analyzes the extracted text.
+
+### Troubleshooting
+- If you see `Text analysis function not available` or `OCR function not available`, ensure `backend.js` exports `GeminiService` and `OCRService` (this repo appends minimal CommonJS exports).
+- Use Node 18+ so `fetch`/`Blob` exist. Otherwise, extend `lib/download.js` to use a fetch polyfill.
+- Large images may take longer; increase `BOT_OPERATION_TIMEOUT_MS` in `.env`.

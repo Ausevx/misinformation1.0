@@ -311,7 +311,13 @@ class OCRService extends APIService {
       );
       formData.append("scale", API_CONFIG.ocrSpace.scale);
       formData.append("isTable", API_CONFIG.ocrSpace.isTable);
-      formData.append("file", imageFile);
+      // Include a filename to ensure proper multipart handling in Node
+      try {
+        formData.append("file", imageFile, "image.jpg");
+      } catch (e) {
+        // Fallback if running in an environment that doesn't support filename here
+        formData.append("file", imageFile);
+      }
 
       const response = await fetch(API_CONFIG.ocrSpace.baseUrl, {
         method: "POST",
@@ -799,3 +805,13 @@ To use all features, set these environment variables:
 
 Current status: ${Object.keys(API_CONFIG).length} services configured
 `);
+
+// Ensure Node/CommonJS exports include OCR and Gemini services as well
+try {
+  if (typeof module !== 'undefined' && module.exports) {
+    module.exports.GeminiService = module.exports.GeminiService || GeminiService;
+    module.exports.OCRService = module.exports.OCRService || OCRService;
+  }
+} catch (e) {
+  // ignore in browser
+}
