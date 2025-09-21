@@ -23,21 +23,21 @@
         <div class="container">
             <div class="header__content">
                 <div class="header__logo">
-                    <h1 class="logo__title">Factify</h1>
+                    <h1 class="logo__title" data-i18n="logo.title">Factify</h1>
                 </div>
                 <nav class="header__nav" role="navigation" aria-label="Main navigation">
-                    <a href="#home" class="nav__link active" aria-current="page">Home</a>
-                    <a href="#verify" class="nav__link">Verify Image</a>
-                    <a href="#news" class="nav__link">Digital Literacy News</a>
-                    <a href="#bot" class="nav__link">Mobile Bot</a>
+                    <a href="#home" class="nav__link active" aria-current="page" data-i18n="nav.home">Home</a>
+                    <a href="#verify" class="nav__link" data-i18n="nav.verifyImage">Verify Image</a>
+                    <a href="#news" class="nav__link" data-i18n="nav.news">Digital Literacy News</a>
+                    <a href="#bot" class="nav__link" data-i18n="nav.mobileBot">Mobile Bot</a>
                 </nav>
                 <div class="header__actions">
                     <button class="btn btn--sm btn--outline theme-toggle" id="themeToggle" title="Toggle dark/light theme" aria-label="Toggle between dark and light theme">
                         <span class="theme-icon" aria-hidden="true">🌙</span>
                     </button>
-                    <button class="btn btn--sm btn--outline language-toggle" id="languageToggle" aria-label="Switch language between English and Hindi">EN / हिं</button>
+                    <button class="btn btn--sm btn--outline language-toggle" id="languageToggle" aria-label="Switch language between English and Hindi" data-i18n="btn.lang">EN / हिं</button>
                     <button class="btn btn--sm btn--primary" id="getStartedBtn" aria-label="Get started with content verification">
-                        <span>Get Started</span>
+                        <span data-i18n="btn.getStarted">Get Started</span>
                         <span class="btn-icon" aria-hidden="true">→</span>
                     </button>
                 </div>
@@ -51,19 +51,19 @@
             <div class="hero">
                 <div class="hero__content">
                     <div class="hero__badge">
-                        <span class="badge badge--new" aria-label="New feature">New</span>
-                        <span>AI-Powered Misinformation Detection</span>
+                        <span class="badge badge--new" aria-label="New feature" data-i18n="badge.new">New</span>
+                        <span data-i18n="badge.tagline">AI-Powered Misinformation Detection</span>
                     </div>
-                    <h1 id="hero-title" class="hero__title">Verify content. Build trust. Stay informed.</h1>
-                    <p class="hero__subtitle">Advanced AI-powered platform for detecting misinformation, scams, and false information across digital channels with 99.8% accuracy.</p>
+                    <h1 id="hero-title" class="hero__title" data-i18n="hero.title">Verify content. Build trust. Stay informed.</h1>
+                    <p class="hero__subtitle" data-i18n="hero.subtitle">Advanced AI-powered platform for detecting misinformation, scams, and false information across digital channels with 99.8% accuracy.</p>
                     <div class="hero__actions">
                         <button class="btn btn--lg btn--primary" id="verifyContentBtn" aria-describedby="verify-description">
-                            <span>Start Verification</span>
+                            <span data-i18n="btn.startVerification">Start Verification</span>
                             <span class="btn-icon" aria-hidden="true">⚡</span>
                         </button>
-                       <div id="verify-description" class="sr-only">Navigate to content verification tools</div>
+                        <div id="verify-description" class="sr-only">Navigate to content verification tools</div>
                         <button class="btn btn--lg btn--outline" id="learnMoreBtn" aria-describedby="learn-description">
-                            <span>Explore Learning Center</span>
+                            <span data-i18n="btn.exploreLearning">Explore Learning Center</span>
                             <span class="btn-icon" aria-hidden="true">📚</span>
                         </button>
                         <div id="learn-description" class="sr-only">Browse educational resources about digital literacy</div>
@@ -77,285 +77,285 @@
     <section id="home-stats" class="stats-section">
         <div class="container">
             <div class="stats-header">
-                <h2>Real-Time Impact</h2>
-                <p>Live statistics from our global misinformation detection network</p>
+                <h2 data-i18n="stats.title">Real-Time Impact</h2>
+                <p data-i18n="stats.subtitle">Live statistics from our global misinformation detection network</p>
             </div>
             <div class="stats-grid">
                 <div class="stat-card" data-stat="verifications">
                     <div class="stat-card__icon">🔍</div>
                     <div class="stat-card__number" data-target="2300000">0</div>
-                    <div class="stat-card__label">Total Verifications</div>
-                    <div class="stat-card__trend">+12% this week</div>
+                    <div class="stat-card__label" data-i18n="stats.totalVerifications">Total Verifications</div>
+                    <div class="stat-card__trend" data-i18n="stats.trendVerifications">+12% this week</div>
                     <div class="stat-card__chart" id="verificationsChart"></div>
                 </div>
                 <div class="stat-card" data-stat="scams">
                     <div class="stat-card__icon">🛡️</div>
                     <div class="stat-card__number" data-target="156000">0</div>
-                    <div class="stat-card__label">Scams Detected</div>
-                    <div class="stat-card__trend">+8% this week</div>
+                    <div class="stat-card__label" data-i18n="stats.scamsDetected">Scams Detected</div>
+                    <div class="stat-card__trend" data-i18n="stats.trendScams">+8% this week</div>
                     <div class="stat-card__chart" id="scamsChart"></div>
                 </div>
                 <div class="stat-card" data-stat="users">
                     <div class="stat-card__icon">👥</div>
                     <div class="stat-card__number" data-target="890000">0</div>
-                    <div class="stat-card__label">Users Educated</div>
-                    <div class="stat-card__trend">+15% this week</div>
+                    <div class="stat-card__label" data-i18n="stats.usersEducated">Users Educated</div>
+                    <div class="stat-card__trend" data-i18n="stats.trendUsers">+15% this week</div>
                     <div class="stat-card__chart" id="usersChart"></div>
                 </div>
                 <div class="stat-card" data-stat="accuracy">
                     <div class="stat-card__icon">🎯</div>
                     <div class="stat-card__number" data-target="99.8">0</div>
                     <div class="stat-card__suffix">%</div>
-                    <div class="stat-card__label">Accuracy Rate</div>
-                    <div class="stat-card__trend">+0.2% this month</div>
+                    <div class="stat-card__label" data-i18n="stats.accuracyRate">Accuracy Rate</div>
+                    <div class="stat-card__trend" data-i18n="stats.trendAccuracy">+0.2% this month</div>
                     <div class="stat-card__chart" id="accuracyChart"></div>
                 </div>
             </div>
             <div class="live-feed">
-                <h3>Live Verification Feed</h3>
+                <h3 data-i18n="stats.liveFeed">Live Verification Feed</h3>
                 <div class="feed-container" id="liveFeed">
-                    <div class="feed-item">
-                        <span class="feed-status verified">✓</span>
-                        <span class="feed-text">Health claim verified from WHO source</span>
-                        <span class="feed-time">2s ago</span>
+                    <div class="feed-item" data-feed-id="sample1">
+                        <span class="feed-status verified" aria-hidden="true">✓</span>
+                        <span class="feed-text" data-i18n-part="text" data-i18n="stats.feed.sample1.text">Health claim verified from WHO source</span>
+                        <span class="feed-time" data-i18n-part="time" data-i18n="stats.feed.sample1.time">2s ago</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-        <!-- Main Verification Interface -->
-        <section id="verify" class="verification-section section hidden">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Image Verification</h2>
-                    <p>Upload an image to check for misinformation, AI generation, and extract text</p>
-                </div>
-                
-                <div class="tab-content-wrapper">
-                    <!-- Image Tab -->
-                    <div id="image-tab" class="tab-content active">
-                        <div class="input-card">
-                            <input type="file" id="imageInput" accept="image/*" class="file-input" />
-                            <div class="file-upload" id="fileUploadArea">
-                                <div class="file-upload__icon">📷</div>
-                                <div class="file-upload__text">
-                                    <strong>Click to upload</strong> or drag and drop your image here
-                                </div>
-                                <div class="file-upload__hint">PNG, JPG, JPEG up to 10MB</div>
+    <!-- Main Verification Interface -->
+    <section id="verify" class="verification-section section hidden">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="verify.title">Image Verification</h2>
+                <p data-i18n="verify.subtitle">Upload an image to check for misinformation, AI generation, and extract text</p>
+            </div>
+
+            <div class="tab-content-wrapper">
+                <!-- Image Tab -->
+                <div id="image-tab" class="tab-content active">
+                    <div class="input-card">
+                        <input type="file" id="imageInput" accept="image/*" class="file-input" />
+                        <div class="file-upload" id="fileUploadArea">
+                            <div class="file-upload__icon">📷</div>
+                            <div class="file-upload__text">
+                                <strong data-i18n="upload.click">Click to upload</strong>
+                                <span data-i18n="upload.or"> or drag and drop your image here</span>
                             </div>
-                            <div id="imagePreview" class="image-preview hidden"></div>
-                            
-                            <!-- OCR Results Section -->
-                            <div id="ocrResults" class="ocr-results hidden">
-                                <div class="ocr-header">
-                                    <h4>📝 Extracted Text (OCR)</h4>
-                                    <span class="ocr-confidence" id="ocrConfidence"></span>
-                                </div>
-                                <div class="ocr-content">
-                                    <textarea id="ocrText" class="ocr-text" readonly placeholder="No text detected in image..."></textarea>
-                                    <div class="ocr-actions">
-                                        <button class="btn btn--sm btn--outline" id="copyOcrText">Copy Text</button>
-                                        <button class="btn btn--sm btn--primary" id="analyzeOcrText">Analyze Extracted Text</button>
-                                    </div>
-                                </div>
+                            <div class="file-upload__hint" data-i18n="upload.hint">PNG, JPG, JPEG up to 10MB</div>
+                        </div>
+                        <div id="imagePreview" class="image-preview hidden"></div>
+
+                        <!-- OCR Results Section -->
+                        <div id="ocrResults" class="ocr-results hidden">
+                            <div class="ocr-header">
+                                <h4 data-i18n="ocr.title">📝 Extracted Text (OCR)</h4>
+                                <span class="ocr-confidence" id="ocrConfidence"></span>
                             </div>
-                            
-                            <!-- AI Detection Results Section -->
-                            <div id="aiDetectionResults" class="ai-detection-results hidden">
-                                <div class="ai-detection-header">
-                                    <h4>🤖 AI Generation Analysis</h4>
-                                    <span class="ai-confidence" id="aiConfidence"></span>
+                            <div class="ocr-content">
+                                <textarea id="ocrText" class="ocr-text" readonly data-i18n-placeholder="ocr.placeholder" placeholder="No text detected in image..."></textarea>
+                                <div class="ocr-actions">
+                                    <button class="btn btn--sm btn--outline" id="copyOcrText" data-i18n="ocr.copy">Copy Text</button>
+                                    <button class="btn btn--sm btn--primary" id="analyzeOcrText" data-i18n="ocr.analyze">Analyze Extracted Text</button>
                                 </div>
-                                <div class="ai-detection-content">
-                                    <div class="ai-verdict" id="aiVerdict"></div>
-                                    <div class="ai-indicators" id="aiIndicators"></div>
-                                </div>
-                            </div>
-                            
-                            <div class="input-actions">
-                                <button class="btn btn--primary analyze-btn" id="analyzeImage" data-translate="analyzeNow">
-                                    Analyze Now
-                                </button>
-                                <button class="btn btn--outline clear-btn" id="clearImage">
-                                    Clear
-                                </button>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <!-- Processing State -->
-                <div id="processingState" class="processing-state hidden">
-                    <div class="processing-card">
-                        <div class="processing-indicator"></div>
-                        <h3>Analyzing Content...</h3>
-                        <div class="progress-bar">
-                            <div class="progress-fill" id="progressFill"></div>
+
+                        <!-- AI Detection Results Section -->
+                        <div id="aiDetectionResults" class="ai-detection-results hidden">
+                            <div class="ai-detection-header">
+                                <h4 data-i18n="ai.title">🤖 AI Generation Analysis</h4>
+                                <span class="ai-confidence" id="aiConfidence"></span>
+                            </div>
+                            <div class="ai-detection-content">
+                                <div class="ai-verdict" id="aiVerdict"></div>
+                                <div class="ai-indicators" id="aiIndicators"></div>
+                            </div>
+                        </div>
+
+                        <div class="input-actions">
+                            <button class="btn btn--primary analyze-btn" id="analyzeImage" data-i18n="verify.analyzeNow">
+                                Analyze Now
+                            </button>
+                            <button class="btn btn--outline clear-btn" id="clearImage" data-i18n="verify.clear">
+                                Clear
+                            </button>
                         </div>
                     </div>
                 </div>
+            </div>
+            <!-- Processing State -->
+            <div id="processingState" class="processing-state hidden">
+                <div class="processing-card">
+                    <div class="processing-indicator"></div>
+                    <h3 data-i18n="verify.processing">Analyzing Content...</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                </div>
+            </div>
 
-                <!-- Results Section -->
-                <div id="resultsSection" class="results-section hidden">
-                    <div class="results-card">
-                        <div class="results-header">
-                            <h3>Verification Results</h3>
+            <!-- Results Section -->
+            <div id="resultsSection" class="results-section hidden">
+                <div class="results-card">
+                    <div class="results-header">
+                        <h3 data-i18n="results.title">Verification Results</h3>
+                    </div>
+                    <div class="confidence-meter">
+                        <div class="confidence-label" data-i18n="results.confidenceLabel">Confidence Level</div>
+                        <div class="confidence-bar">
+                            <div class="confidence-fill" id="confidenceFill"></div>
                         </div>
-                        <div class="confidence-meter">
-                            <div class="confidence-label">Confidence Level</div>
-                            <div class="confidence-bar">
-                                <div class="confidence-fill" id="confidenceFill"></div>
-                            </div>
-                            <div class="confidence-value" id="confidenceValue">0%</div>
-                        </div>
-                        <div class="verdict-display" id="verdictDisplay">
-                            <div class="verdict-icon" id="verdictIcon">⚠️</div>
-                            <div class="verdict-text" id="verdictText">Analysis Complete</div>
-                        </div>
-                        <div class="analysis-explanation" id="analysisExplanation"></div>
-                        <div class="recommendation-tips">
-                            <h4>Recommendations</h4>
-                            <ul id="recommendationsList"></ul>
+                        <div class="confidence-value" id="confidenceValue">0%</div>
+                    </div>
+                    <div class="verdict-display" id="verdictDisplay">
+                        <div class="verdict-icon" id="verdictIcon">⚠️</div>
+                        <div class="verdict-text" id="verdictText" data-i18n="results.analysisComplete">Analysis Complete</div>
+                    </div>
+                    <div class="analysis-explanation" id="analysisExplanation"></div>
+                    <div class="recommendation-tips">
+                        <h4 data-i18n="results.recommendations">Recommendations</h4>
+                        <ul id="recommendationsList"></ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI Fact-Check Chatbot -->
+            <div class="chatbot-container" id="chatbotContainer">
+                <div class="chatbot-header">
+                    <div class="chatbot-avatar">🤖</div>
+                    <div>
+                        <h3 class="chatbot-title" data-i18n="chat.title">AI Fact-Check Assistant</h3>
+                        <div class="chatbot-status">
+                            <div class="status-indicator"></div>
+                            <span data-i18n="chat.online">Online</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- AI Fact-Check Chatbot -->
-                <div class="chatbot-container" id="chatbotContainer">
-                    <div class="chatbot-header">
-                        <div class="chatbot-avatar">🤖</div>
-                        <div>
-                            <h3 class="chatbot-title">AI Fact-Check Assistant</h3>
-                            <div class="chatbot-status">
-                                <div class="status-indicator"></div>
-                                Online
-                            </div>
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message">
+                        <div class="message-bubble">
+                            <span data-i18n="chat.welcome">Hi! I'm your AI fact-checking assistant. I can help you verify information, check sources, and provide detailed analysis. What would you like to fact-check today?</span>
                         </div>
-                    </div>
-                    
-                    <div class="chat-messages" id="chatMessages">
-                        <div class="message">
-                            <div class="message-bubble">
-                                Hi! I'm your AI fact-checking assistant. I can help you verify information, check sources, and provide detailed analysis. What would you like to fact-check today?
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="suggested-questions">
-                        <div class="suggestion-chip" onclick="sendSuggestedQuestion('Is this news article credible?')">Is this news article credible?</div>
-                        <div class="suggestion-chip" onclick="sendSuggestedQuestion('Check this health claim')">Check this health claim</div>
-                        <div class="suggestion-chip" onclick="sendSuggestedQuestion('Verify this social media post')">Verify this social media post</div>
-                        <div class="suggestion-chip" onclick="sendSuggestedQuestion('Is this a scam?')">Is this a scam?</div>
-                    </div>
-                    
-                    <div class="chat-input-container">
-                        <textarea 
-                            class="chat-input" 
-                            id="chatInput" 
-                            placeholder="Ask me to fact-check anything..."
-                            rows="1"
-                        ></textarea>
-                        <button class="chat-send-btn" id="chatSendBtn" onclick="sendChatMessage()">
-                            Send
-                        </button>
-                        <button class="chat-clear-btn" id="chatClearBtn" onclick="clearChat()">
-                            Clear
-                        </button>
                     </div>
                 </div>
 
-                <!-- API Status Checker -->
-                <div class="api-status-section" id="apiStatusSection">
-                    <div class="status-header">
-                        <h3>🔧 API Services Status</h3>
-                        <p>Check if all backend services are working properly</p>
-                        <button class="btn btn--sm btn--outline" id="refreshStatusBtn" onclick="checkAPIStatus()">
-                            <span id="refreshIcon">🔄</span> Check Status
-                        </button>
-                    </div>
-                    
-                    <div class="services-grid" id="servicesGrid">
-                        <div class="service-card" data-service="gemini">
-                            <div class="service-header">
-                                <div class="service-icon">🤖</div>
-                                <div class="service-info">
-                                    <h4>Gemini AI</h4>
-                                    <p>Advanced fact-checking and content analysis</p>
-                                </div>
-                                <div class="service-status" id="geminiStatus">
-                                    <span class="status-indicator checking"></span>
-                                    <span class="status-text">Checking...</span>
-                                </div>
+                <div class="suggested-questions">
+                    <div class="suggestion-chip" data-i18n="chat.suggest1" onclick="sendSuggestedQuestion('Is this news article credible?')">Is this news article credible?</div>
+                    <div class="suggestion-chip" data-i18n="chat.suggest2" onclick="sendSuggestedQuestion('Check this health claim')">Check this health claim</div>
+                    <div class="suggestion-chip" data-i18n="chat.suggest3" onclick="sendSuggestedQuestion('Verify this social media post')">Verify this social media post</div>
+                    <div class="suggestion-chip" data-i18n="chat.suggest4" onclick="sendSuggestedQuestion('Is this a scam?')">Is this a scam?</div>
+                </div>
+
+                <div class="chat-input-container">
+                    <textarea 
+                        class="chat-input" 
+                        id="chatInput" 
+                        data-i18n-placeholder="chat.placeholder" placeholder="Ask me to fact-check anything..."
+                        rows="1"
+                    ></textarea>
+                    <button class="chat-send-btn" id="chatSendBtn" onclick="sendChatMessage()" data-i18n="chat.send">
+                        Send
+                    </button>
+                    <button class="chat-clear-btn" id="chatClearBtn" onclick="clearChat()" data-i18n="chat.clear">
+                        Clear
+                    </button>
+                </div>
+            </div>
+
+            <!-- API Status Checker -->
+            <div class="api-status-section" id="apiStatusSection">
+                <div class="status-header">
+                    <h3 data-i18n="api.title">🔧 API Services Status</h3>
+                    <p data-i18n="api.subtitle">Check if all backend services are working properly</p>
+                    <button class="btn btn--sm btn--outline" id="refreshStatusBtn" onclick="checkAPIStatus()">
+                        <span id="refreshIcon">🔄</span> <span data-i18n="api.check">Check Status</span>
+                    </button>
+                </div>
+
+                <div class="services-grid" id="servicesGrid">
+                    <div class="service-card" data-service="gemini">
+                        <div class="service-header">
+                            <div class="service-icon">🤖</div>
+                            <div class="service-info">
+                                <h4 data-i18n="api.gemini.title">Gemini AI</h4>
+                                <p data-i18n="api.gemini.desc">Advanced fact-checking and content analysis</p>
                             </div>
-                            <div class="service-details" id="geminiDetails">
-                                <div class="status-message">Testing connection...</div>
-                                <div class="last-test">Last tested: Never</div>
+                            <div class="service-status" id="geminiStatus">
+                                <span class="status-indicator checking"></span>
+                                <span class="status-text" data-i18n="api.checking">Checking...</span>
                             </div>
                         </div>
-
-                        <div class="service-card" data-service="huggingface">
-                            <div class="service-header">
-                                <div class="service-icon">🤗</div>
-                                <div class="service-info">
-                                    <h4>Hugging Face</h4>
-                                    <p>Sentiment analysis and text classification</p>
-                                </div>
-                                <div class="service-status" id="huggingfaceStatus">
-                                    <span class="status-indicator checking"></span>
-                                    <span class="status-text">Checking...</span>
-                                </div>
-                            </div>
-                            <div class="service-details" id="huggingfaceDetails">
-                                <div class="status-message">Testing connection...</div>
-                                <div class="last-test">Last tested: Never</div>
-                            </div>
-                        </div>
-
-                        <div class="service-card" data-service="ocr">
-                            <div class="service-header">
-                                <div class="service-icon">👁️</div>
-                                <div class="service-info">
-                                    <h4>OCR.space</h4>
-                                    <p>Text extraction from images</p>
-                                </div>
-                                <div class="service-status" id="ocrStatus">
-                                    <span class="status-indicator checking"></span>
-                                    <span class="status-text">Checking...</span>
-                                </div>
-                            </div>
-                            <div class="service-details" id="ocrDetails">
-                                <div class="status-message">Testing connection...</div>
-                                <div class="last-test">Last tested: Never</div>
-                            </div>
-                        </div>
-
-                        <div class="service-card" data-service="sightengine">
-                            <div class="service-header">
-                                <div class="service-icon">🛡️</div>
-                                <div class="service-info">
-                                    <h4>SightEngine</h4>
-                                    <p>Content moderation and image analysis</p>
-                                </div>
-                                <div class="service-status" id="sightengineStatus">
-                                    <span class="status-indicator checking"></span>
-                                    <span class="status-text">Checking...</span>
-                                </div>
-                            </div>
-                            <div class="service-details" id="sightengineDetails">
-                                <div class="status-message">Testing connection...</div>
-                                <div class="last-test">Last tested: Never</div>
-                            </div>
+                        <div class="service-details" id="geminiDetails">
+                            <div class="status-message" data-i18n="api.testing">Testing connection...</div>
+                            <div class="last-test" data-i18n="api.lastNever">Last tested: Never</div>
                         </div>
                     </div>
 
-                    <div class="status-summary" id="statusSummary">
-                        <div class="summary-card">
-                            <div class="summary-icon">📊</div>
-                            <div class="summary-content">
-                                <h4>Overall Status</h4>
-                                <div class="summary-text" id="summaryText">Click "Check Status" to test all services</div>
-                                <div class="summary-timestamp" id="summaryTimestamp"></div>
+                    <div class="service-card" data-service="huggingface">
+                        <div class="service-header">
+                            <div class="service-icon">🤗</div>
+                            <div class="service-info">
+                                <h4 data-i18n="api.hf.title">Hugging Face</h4>
+                                <p data-i18n="api.hf.desc">Sentiment analysis and text classification</p>
                             </div>
+                            <div class="service-status" id="huggingfaceStatus">
+                                <span class="status-indicator checking"></span>
+                                <span class="status-text" data-i18n="api.checking">Checking...</span>
+                            </div>
+                        </div>
+                        <div class="service-details" id="huggingfaceDetails">
+                            <div class="status-message" data-i18n="api.testing">Testing connection...</div>
+                            <div class="last-test" data-i18n="api.lastNever">Last tested: Never</div>
+                        </div>
+                    </div>
+
+                    <div class="service-card" data-service="ocr">
+                        <div class="service-header">
+                            <div class="service-icon">👁️</div>
+                            <div class="service-info">
+                                <h4 data-i18n="api.ocr.title">OCR.space</h4>
+                                <p data-i18n="api.ocr.desc">Text extraction from images</p>
+                            </div>
+                            <div class="service-status" id="ocrStatus">
+                                <span class="status-indicator checking"></span>
+                                <span class="status-text" data-i18n="api.checking">Checking...</span>
+                            </div>
+                        </div>
+                        <div class="service-details" id="ocrDetails">
+                            <div class="status-message" data-i18n="api.testing">Testing connection...</div>
+                            <div class="last-test" data-i18n="api.lastNever">Last tested: Never</div>
+                        </div>
+                    </div>
+
+                    <div class="service-card" data-service="sightengine">
+                        <div class="service-header">
+                            <div class="service-icon">🛡️</div>
+                            <div class="service-info">
+                                <h4 data-i18n="api.se.title">SightEngine</h4>
+                                <p data-i18n="api.se.desc">Content moderation and image analysis</p>
+                            </div>
+                            <div class="service-status" id="sightengineStatus">
+                                <span class="status-indicator checking"></span>
+                                <span class="status-text" data-i18n="api.checking">Checking...</span>
+                            </div>
+                        </div>
+                        <div class="service-details" id="sightengineDetails">
+                            <div class="status-message" data-i18n="api.testing">Testing connection...</div>
+                            <div class="last-test" data-i18n="api.lastNever">Last tested: Never</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="status-summary" id="statusSummary">
+                    <div class="summary-card">
+                        <div class="summary-icon">📊</div>
+                        <div class="summary-content">
+                            <h4 data-i18n="api.overall">Overall Status</h4>
+                            <div class="summary-text" id="summaryText" data-i18n="api.summary">Click "Check Status" to test all services</div>
+                            <div class="summary-timestamp" id="summaryTimestamp"></div>
                         </div>
                     </div>
                 </div>
@@ -367,26 +367,37 @@
     <section id="news" class="news-section section hidden">
         <div class="container">
             <div class="news-header">
-                <h2>Digital Literacy News Center</h2>
-                <p>Stay informed about the latest in misinformation detection, digital literacy, and cybersecurity</p>
+                <h2 data-i18n="news.title">Digital Literacy News Center</h2>
+                <p data-i18n="news.subtitle">Stay informed about the latest in misinformation detection, digital literacy, and cybersecurity</p>
             </div>
 
             <!-- News Categories -->
             <div class="news-categories">
-                <button class="category-tab active" data-category="all">All Articles</button>
-                <button class="category-tab" data-category="health">Health</button>
-                <button class="category-tab" data-category="politics">Politics</button>
-                <button class="category-tab" data-category="financial">Financial</button>
-                <button class="category-tab" data-category="technology">Technology</button>
-                <button class="category-tab" data-category="education">Education</button>
-                <button class="category-tab" data-category="ai_deepfakes">AI & Deepfakes</button>
+                <button class="category-tab active" data-category="all" data-i18n="news.cat.all">All Articles</button>
+                <button class="category-tab" data-category="health" data-i18n="news.cat.health">Health</button>
+                <button class="category-tab" data-category="politics" data-i18n="news.cat.politics">Politics</button>
+                <button class="category-tab" data-category="financial" data-i18n="news.cat.financial">Financial</button>
+                <button class="category-tab" data-category="technology" data-i18n="news.cat.technology">Technology</button>
+                <button class="category-tab" data-category="education" data-i18n="news.cat.education">Education</button>
+                <button class="category-tab" data-category="ai_deepfakes" data-i18n="news.cat.ai">AI & Deepfakes</button>
             </div>
 
             <div class="news-content">
                 <!-- Featured Articles -->
                 <div class="featured-section">
-                    <h3>Featured Articles</h3>
-                    <div class="featured-articles" id="featuredArticles"></div>
+                    <h3 data-i18n="news.featured">Featured Articles</h3>
+                    <div class="featured-articles" id="featuredArticles">
+                        <!-- Sample Featured Article 1 -->
+                        <article class="featured-card" data-article-id="a1" data-category="technology">
+                            <h4 class="article-title" data-i18n-part="title" data-i18n="news.article.a1.title">How to Spot Deepfakes</h4>
+                            <p class="article-desc" data-i18n-part="desc" data-i18n="news.article.a1.desc">A quick guide to identifying synthetic media online.</p>
+                            <p class="article-body" data-i18n-part="body" data-i18n="news.article.a1.body">Deepfakes use AI techniques to create realistic fake audio or video. Check for visual artifacts, inconsistent lighting, and verify sources.</p>
+                            <div class="article-meta">
+                                <span class="article-author" data-i18n-part="author" data-i18n="news.article.a1.author">By Factify Team</span>
+                            </div>
+                            <a href="#" class="article-cta btn btn--sm btn--outline read-more" data-i18n-part="cta" data-i18n="news.article.a1.cta">Read More</a>
+                        </article>
+                    </div>
                 </div>
 
                 <!-- Main News Grid -->
@@ -399,46 +410,67 @@
                                 <button class="view-btn" data-view="list" title="List View">☰</button>
                             </div>
                         </div>
-                        <div class="articles-grid" id="articlesGrid"></div>
+                        <div class="articles-grid" id="articlesGrid">
+                            <!-- Sample Article 2 -->
+                            <article class="article-card" data-article-id="a2" data-category="health">
+                                <h4 class="article-title" data-i18n-part="title" data-i18n="news.article.a2.title">Debunking Viral Health Myths</h4>
+                                <p class="article-desc" data-i18n-part="desc" data-i18n="news.article.a2.desc">Separate facts from fiction in trending health posts.</p>
+                                <p class="article-body" data-i18n-part="body" data-i18n="news.article.a2.body">Verify claims with trusted sources like WHO or CDC. Watch for miracle cures, absolute statements, and missing citations.</p>
+                                <div class="article-meta">
+                                    <span class="article-author" data-i18n-part="author" data-i18n="news.article.a2.author">By Factify Team</span>
+                                </div>
+                                <a href="#" class="article-cta btn btn--sm btn--outline read-more" data-i18n-part="cta" data-i18n="news.article.a2.cta">Read More</a>
+                            </article>
+
+                            <!-- Sample Article 3 -->
+                            <article class="article-card" data-article-id="a3" data-category="politics">
+                                <h4 class="article-title" data-i18n-part="title" data-i18n="news.article.a3.title">Check Before You Share</h4>
+                                <p class="article-desc" data-i18n-part="desc" data-i18n="news.article.a3.desc">Quick steps to verify political claims on social media.</p>
+                                <p class="article-body" data-i18n-part="body" data-i18n="news.article.a3.body">Look for original source links, cross-check with reputable outlets, and beware of edited screenshots lacking context.</p>
+                                <div class="article-meta">
+                                    <span class="article-author" data-i18n-part="author" data-i18n="news.article.a3.author">By Factify Team</span>
+                                </div>
+                                <a href="#" class="article-cta btn btn--sm btn--outline read-more" data-i18n-part="cta" data-i18n="news.article.a3.cta">Read More</a>
+                            </article>
+                        </div>
                         <div class="pagination" id="pagination"></div>
                     </div>
-                    
+
                     <!-- News Sidebar -->
                     <div class="news-sidebar">
                         <div class="sidebar-section">
-                            <h4>Search Articles</h4>
+                            <h4 data-i18n="news.searchTitle">Search Articles</h4>
                             <div class="search-box">
-                                <input type="text" class="form-control search-input" placeholder="Search articles..." id="searchInput">
+                                <input type="text" class="form-control search-input" id="searchInput" data-i18n-placeholder="news.searchPlaceholder" placeholder="Search articles...">
                                 <button class="search-btn" id="searchBtn">
                                     <span class="search-icon">🔍</span>
                                 </button>
                             </div>
                             <div class="search-filters">
                                 <select class="form-control" id="sortFilter">
-                                    <option value="date-desc">Newest First</option>
-                                    <option value="date-asc">Oldest First</option>
-                                    <option value="relevance">Most Relevant</option>
-                                    <option value="trending">Trending</option>
+                                    <option value="date-desc" data-i18n="news.sort.newest">Newest First</option>
+                                    <option value="date-asc" data-i18n="news.sort.oldest">Oldest First</option>
+                                    <option value="relevance" data-i18n="news.sort.relevance">Most Relevant</option>
+                                    <option value="trending" data-i18n="news.sort.trending">Trending</option>
                                 </select>
                                 <select class="form-control" id="sourceFilter">
-                                    <option value="all">All Sources</option>
-                                    <option value="reuters">Reuters</option>
-                                    <option value="bbc">BBC</option>
-                                    <option value="guardian">The Guardian</option>
-                                    <option value="who">WHO</option>
-                                    <option value="cdc">CDC</option>
+                                    <option value="all" data-i18n="news.source.all">All Sources</option>
+                                    <option value="reuters" data-i18n="news.source.reuters">Reuters</option>
+                                    <option value="bbc" data-i18n="news.source.bbc">BBC</option>
+                                    <option value="guardian" data-i18n="news.source.guardian">The Guardian</option>
+                                    <option value="who" data-i18n="news.source.who">WHO</option>
+                                    <option value="cdc" data-i18n="news.source.cdc">CDC</option>
                                 </select>
                             </div>
                         </div>
 
-                        
                         <div class="sidebar-section">
-                            <h4>Recent Articles</h4>
+                            <h4 data-i18n="news.recent">Recent Articles</h4>
                             <div class="recent-articles" id="recentArticles"></div>
                         </div>
-                        
+
                         <div class="sidebar-section">
-                            <h4>Trusted Sources</h4>
+                            <h4 data-i18n="news.trusted">Trusted Sources</h4>
                             <div class="trusted-sources" id="trustedSources"></div>
                         </div>
                     </div>
@@ -451,25 +483,25 @@
     <section id="bot" class="bot-section section hidden">
         <div class="container">
             <div class="section-header">
-                <h2>Continue on Mobile</h2>
-                <p>Access Factify verification tools directly from your messaging apps</p>
+                <h2 data-i18n="bot.title">Continue on Mobile</h2>
+                <p data-i18n="bot.subtitle">Access Factify verification tools directly from your messaging apps</p>
             </div>
 
             <div class="bot-integration">
                 <div class="bot-card">
                     <div class="bot-card__header">
                         <div class="bot-icon">💬</div>
-                        <h3>WhatsApp Verification</h3>
+                        <h3 data-i18n="bot.whatsapp.title">WhatsApp Verification</h3>
                     </div>
                     <div class="bot-card__body">
-                        <p>Send suspicious messages directly to our WhatsApp bot for instant verification</p>
+                        <p data-i18n="bot.whatsapp.desc">Send suspicious messages directly to our WhatsApp bot for instant verification</p>
                         <div class="contact-info">
                             <strong>+91 98765 43210</strong>
                         </div>
                     </div>
                     <div class="bot-card__actions">
                         <a href="https://wa.me/919876543210" target="_blank" class="btn btn--primary">
-                            Start WhatsApp Chat
+                            <span data-i18n="bot.whatsapp.cta">Start WhatsApp Chat</span>
                         </a>
                     </div>
                 </div>
@@ -477,17 +509,17 @@
                 <div class="bot-card">
                     <div class="bot-card__header">
                         <div class="bot-icon">📱</div>
-                        <h3>Telegram Bot</h3>
+                        <h3 data-i18n="bot.telegram.title">Telegram Bot</h3>
                     </div>
                     <div class="bot-card__body">
-                        <p>Use our Telegram bot for quick content verification and educational resources</p>
+                        <p data-i18n="bot.telegram.desc">Use our Telegram bot for quick content verification and educational resources</p>
                         <div class="contact-info">
                             <strong>@FactifyBot</strong>
                         </div>
                     </div>
                     <div class="bot-card__actions">
                         <a href="https://t.me/FactifyBot" target="_blank" class="btn btn--primary">
-                            Open Telegram Bot
+                            <span data-i18n="bot.telegram.cta">Open Telegram Bot</span>
                         </a>
                     </div>
                 </div>
@@ -500,41 +532,43 @@
         <div class="container">
             <div class="footer-inner">
                 <div class="footer-col">
-                    <h4>About Factify</h4>
-                    <a class="footer-link" href="#">Our Mission</a>
-                    <a class="footer-link" href="#">How It Works</a>
-                    <a class="footer-link" href="#">Trust & Safety</a>
+                    <h4 data-i18n="footer.about">About Factify</h4>
+                    <a class="footer-link" href="#" data-i18n="footer.mission">Our Mission</a>
+                    <a class="footer-link" href="#" data-i18n="footer.howItWorks">How It Works</a>
+                    <a class="footer-link" href="#" data-i18n="footer.trustSafety">Trust & Safety</a>
                 </div>
                 <div class="footer-col">
-                    <h4>Help & Support</h4>
-                    <a class="footer-link" href="#">FAQs</a>
-                    <a class="footer-link" href="#">Contact Support</a>
-                    <a class="footer-link" href="#">Report Misinformation</a>
+                    <h4 data-i18n="footer.helpSupport">Help & Support</h4>
+                    <a class="footer-link" href="#" data-i18n="footer.faqs">FAQs</a>
+                    <a class="footer-link" href="#" data-i18n="footer.contact">Contact Support</a>
+                    <a class="footer-link" href="#" data-i18n="footer.report">Report Misinformation</a>
                 </div>
                 <div class="footer-col">
-                    <h4>Resources</h4>
-                    <a class="footer-link" href="#">Learning Center</a>
-                    <a class="footer-link" href="#">Digital Literacy Guides</a>
-                    <a class="footer-link" href="#">Trusted Sources</a>
+                    <h4 data-i18n="footer.resources">Resources</h4>
+                    <a class="footer-link" href="#" data-i18n="footer.learningCenter">Learning Center</a>
+                    <a class="footer-link" href="#" data-i18n="footer.guides">Digital Literacy Guides</a>
+                    <a class="footer-link" href="#" data-i18n="footer.trustedSources">Trusted Sources</a>
                 </div>
                 <div class="footer-col">
-                    <h4>Legal</h4>
-                    <a class="footer-link" href="#">Privacy Policy</a>
-                    <a class="footer-link" href="#">Terms of Use</a>
-                    <a class="footer-link" href="#">Accessibility</a>
+                    <h4 data-i18n="footer.legal">Legal</h4>
+                    <a class="footer-link" href="#" data-i18n="footer.privacy">Privacy Policy</a>
+                    <a class="footer-link" href="#" data-i18n="footer.terms">Terms of Use</a>
+                    <a class="footer-link" href="#" data-i18n="footer.accessibility">Accessibility</a>
                 </div>
             </div>
             <div class="footer-bottom">
                 <div>  <span id="year"></span> Factify</div>
-                <div>Made for safer, informed digital experiences</div>
+                <div data-i18n="footer.tagline">Made for safer, informed digital experiences</div>
             </div>
         </div>
     </footer>
 
+    <script src="translate.js"></script>
     <script src="config.js"></script>
     <script src="api-manager.js"></script>
     <script src="backend.js"></script>
     <script src="app.js"></script>
+
     <script>
       // Set current year in footer
       (function(){
